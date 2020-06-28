@@ -9,3 +9,4 @@ Theough this project we created an asynchronous web app that uses Web API and us
 3. send temp along with user MSG to our server
 4. then retiriveve the data from the server and update the UI with it 
 
+See it working https://weather-journal-app-udacity.herokuapp.com/
