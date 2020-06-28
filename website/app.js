@@ -20,6 +20,8 @@ function GetTemSendTem() {
         try {
             // Transform into JSON
             const whatherData = await request.json();
+            console.log(whatherData);
+            
             console.log(whatherData.main.temp);
             
             return whatherData.main.temp ;
