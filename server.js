@@ -1,9 +1,9 @@
 
 // Require Express to run server and routes
-var express = require('express');
+const express = require('express');
 
 // Start up an instance of app
-var app = express();
+const app = express();
 
 /* Dependencies */
 const bodyParser = require('body-parser')
