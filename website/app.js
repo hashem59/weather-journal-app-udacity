@@ -59,9 +59,9 @@ function GetTemSendTem() {
             const allData = await request.json();
             console.log('allData', allData);
             
-            document.getElementById('temp').innerHTML = allData.temperature;
-            document.getElementById('date').innerHTML = allData.date;
-            document.getElementById('content').innerHTML = allData.user_response;
+            document.getElementById('temp').innerHTML = 'Temperature' + allData.temperature;
+            document.getElementById('date').innerHTML = 'Date' + allData.date;
+            document.getElementById('content').innerHTML = 'Fleelings' + allData.user_response;
         }
         catch (error) {
             console.log("error", error);
