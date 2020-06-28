@@ -22,8 +22,6 @@ function GetTemSendTem() {
             const whatherData = await request.json();
             console.log(whatherData);
             
-            console.log(whatherData.main.temp);
-            
             return whatherData.main.temp ;
         }
         catch (error) {
@@ -59,9 +57,9 @@ function GetTemSendTem() {
             const allData = await request.json();
             console.log('allData', allData);
             
-            document.getElementById('temp').innerHTML = 'Temperature' + allData.temperature;
-            document.getElementById('date').innerHTML = 'Date' + allData.date;
-            document.getElementById('content').innerHTML = 'Fleelings' + allData.user_response;
+            document.getElementById('temp').innerHTML = 'Temperature: ' + allData.temperature;
+            document.getElementById('date').innerHTML = 'Date: ' + allData.date;
+            document.getElementById('content').innerHTML = 'Fleelings: ' + allData.user_response;
         }
         catch (error) {
             console.log("error", error);
